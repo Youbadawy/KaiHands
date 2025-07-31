@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/workspace/KaiHands/plugins/social_mcp/reddit_mcp.py", line 32, in <module>
+    reddit = praw.Reddit(
+             ^^^^^^^^^^^^
+  File "/openhands/poetry/openhands-ai-5O4_aCHf-py3.12/lib/python3.12/site-packages/praw/util/deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/openhands/poetry/openhands-ai-5O4_aCHf-py3.12/lib/python3.12/site-packages/praw/reddit.py", line 258, in __init__
+    raise MissingRequiredAttributeException(
+praw.exceptions.MissingRequiredAttributeException: Required configuration setting 'client_id' missing. 
+This setting can be provided in a praw.ini file, as a keyword argument to the Reddit class constructor, or as an environment variable.

@@ -1,0 +1,40 @@
+
+
+# Social Media MCP Server Configuration
+# Add these configurations to your main config.toml file
+
+[mcp_servers.twitter]
+name = "Twitter/X MCP Server"
+command = "python"
+args = ["plugins/social_mcp/twitter_mcp.py"]
+port = 8001
+enabled = true
+
+[mcp_servers.reddit]
+name = "Reddit MCP Server"
+command = "python"
+args = ["plugins/social_mcp/reddit_mcp.py"]
+port = 8002
+enabled = true
+
+[mcp_servers.linkedin]
+name = "LinkedIn MCP Server"
+command = "python"
+args = ["plugins/social_mcp/linkedin_mcp.py"]
+port = 8003
+enabled = true
+
+[mcp_servers.facebook]
+name = "Facebook/Instagram MCP Server"
+command = "python"
+args = ["plugins/social_mcp/facebook_mcp.py"]
+port = 8004
+enabled = true
+
+[mcp_servers.tiktok]
+name = "TikTok MCP Server"
+command = "python"
+args = ["plugins/social_mcp/tiktok_mcp.py"]
+port = 8005
+enabled = true
+

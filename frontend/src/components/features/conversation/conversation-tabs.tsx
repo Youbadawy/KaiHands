@@ -1,5 +1,5 @@
 import { DiGit } from "react-icons/di";
-import { FaServer, FaExternalLinkAlt } from "react-icons/fa";
+import { FaServer, FaExternalLinkAlt, FaShareAlt } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { VscCode } from "react-icons/vsc";
@@ -86,6 +86,11 @@ export function ConversationTabs() {
           ),
           to: "browser",
           icon: <GlobeIcon />,
+        },
+        {
+          label: "Social Media",
+          to: "social-media",
+          icon: <FaShareAlt className="w-5 h-5" />,
         },
       ]}
     >
