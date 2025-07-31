@@ -1,17 +1,14 @@
 
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { FaShareAlt } from "react-icons/fa";
-import { Container } from "#/components/layout/container";
-import { TabContent } from "#/components/layout/tab-content";
-import { useConversationId } from "#/hooks/use-conversation-id";
-import { I18nKey } from "#/i18n/declaration";
+import { FaShareAlt } from 'react-icons/fa';
+import { Container } from '#/components/layout/container';
+import { useConversationId } from '#/hooks/use-conversation-id';
 
 export function SocialMediaTab() {
   const { t } = useTranslation();
   const { conversationId } = useConversationId();
   
-  const [connectedPlatforms, setConnectedPlatforms] = useState<string[]>([]);
   const [selectedPlatform, setSelectedPlatform] = useState<string>('');
   
   const platforms = [
